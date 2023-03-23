@@ -1,0 +1,80 @@
+.container {
+    min-height: 70vh;
+    width: 100%;
+    background-color: var(--primary-1);
+    padding: 30px 5%;
+    color: var(--tw1);
+}
+.container .box {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.container .box .item {
+    flex: 1;
+}
+.container .box .item:first-child {
+    flex: 2;
+}
+.container .box .item p {
+    line-height: 30px;
+}
+.container .box .item h2 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.container .box .item h2::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    height: 3px;
+    width: 100px;
+    background-color: var(--primary-3);
+}
+.container .box .item a {
+    display: block;
+    margin-bottom: 30px;
+    color: var(--tw1);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.container .box .item a:hover {
+    color: var(--primary-3);
+}
+
+.container .rights {
+    border-top: 1px solid #eeeeee34;
+    margin-top: 30px;
+}
+.container .rights p {
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+.container .rights span {
+    color: var(--primary-3);
+}
+.container .rights a {
+    color: var(--primary-3);
+    text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    .container .box .item {
+        flex: unset;
+    }
+    .container .box .item:first-child {
+        flex: unset;
+    }
+}
+@media (max-width: 1000px) {
+    .container .box .item:nth-child(2) {
+        flex: unset;
+        width: 100%;
+    }
+    .container .box .item:last-child {
+        width: 100%;
+    }
+}

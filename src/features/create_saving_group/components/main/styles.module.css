@@ -1,0 +1,90 @@
+.container {
+    min-height: 100vh;
+    flex: 1;
+    padding-bottom: 50px;
+}
+
+.container h2 {
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+.container .form_box {
+    width: 100%;
+    padding: 0 35px;
+    margin-top: 25px;
+}
+.form_box form {
+    min-height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px #00000027;
+    background-color: var(--box-background);
+}
+
+.form_box form .insert span {
+    display: block;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.form_box form .inputs_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.form_box form .input_box {
+    padding: 0 20px;
+    margin-bottom: 35px;
+    width: 49%;
+}
+.form_box form .input_box label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.form_box form .input_box input {
+    font-size: 0.9rem;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid rgba(127, 127, 255, 0.514);
+    border-radius: 5px;
+    padding: 0 15px;
+    color: #666;
+}
+.form_box form .input_box input::placeholder {
+    color: #666;
+}
+.form_box form .button {
+    width: 100%;
+    min-height: 70px;
+    padding: 0 15px;
+}
+.form_box form .button button {
+    float: right;
+    padding: 15px 20px;
+    background-color: var(--primary-1);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form_box form .button button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+    .form_box form .input_box {
+        width: 100%;
+    }
+    .container h2 {
+        margin-left: 15px;
+    }
+
+    .container .form_box {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

@@ -1,0 +1,19 @@
+.modal {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    min-width: 250px;
+    background-color: var(--box-background);
+    box-shadow: 4px 4px 5px #0000001e;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.modal a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-1);
+    margin-bottom: 10px;
+}

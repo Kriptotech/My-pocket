@@ -1,0 +1,52 @@
+:root {
+    --page-background: rgb(241, 241, 241);
+    --box-background: rgb(255, 255, 255);
+    --black: rgba(12, 21, 29, 0.863);
+
+    --primary-1: rgb(116, 96, 238);
+    --primary-2: rgb(127, 127, 255);
+    --primary-3: rgba(127, 127, 255, 0.514);
+
+    --tb1: rgb(3, 3, 3);
+    --tb2: rgba(72, 77, 104, 0.719);
+    --tb3: rgba(0, 0, 0, 0.459);
+
+    --yellow1: rgb(255, 178, 43);
+    --green1: rgb(0, 128, 0);
+    --pink1: rgb(252, 75, 108);
+
+    --tw1: #f8f8f8;
+    --tw2: #fff;
+
+    --sidebar-background: rgb(34, 45, 50);
+    --sidebar-hover1: rgb(26, 34, 38);
+    --sidebar-hover2: rgba(26, 34, 38, 0.432);
+    --sidebar-color1: rgb(184, 199, 206);
+    --sidebar-color2: rgba(184, 199, 206, 0.452);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: var(--black);
+    font-family: "Poppins", sans-serif;
+    background-color: var(--page-background);
+}
+.app {
+    z-index: 1;
+    /* overflow: hidden; */
+}
+::-webkit-scrollbar {
+    background: transparent;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--sidebar-color1);
+    border-radius: 15px;
+}

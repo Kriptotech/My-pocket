@@ -1,0 +1,108 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.644),
+            #0c0c0ca1
+        ),
+        url(./slider-1.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding: 0 5%;
+}
+
+.container .box {
+    width: 70%;
+    padding-top: 13rem;
+    color: rgb(250, 250, 250);
+}
+
+.container .box span {
+    color: var(--primary-2);
+    font-size: 2rem;
+    display: block;
+}
+.container .box h1 {
+    color: var(--tw1);
+    font-size: 4rem;
+    margin: 20px 0;
+}
+.container .box p {
+    color: var(--tw1);
+    font-size: 1.1rem;
+}
+.container .box div {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.container .box div a {
+    color: var(--tw1);
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: var(--primary-2);
+    border-radius: 7px;
+    text-decoration: none;
+}
+.container .box div a:last-child {
+    background-color: var(--primary-1);
+}
+
+@media (max-width: 1200px) {
+    .container .box {
+        width: 60%;
+    }
+}
+@media (max-width: 1009px) {
+    .container .box {
+        width: 80%;
+    }
+}
+@media (max-width: 900px) {
+    .container {
+        min-height: unset;
+        padding-bottom: 100px;
+    }
+}
+@media (max-height: 900px) {
+    .container {
+        min-height: unset;
+        padding-bottom: 100px;
+    }
+    .container .box span {
+        font-size: 1.5rem;
+    }
+    .container .box h1 {
+        font-size: 3.5rem;
+    }
+    .container .box p {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 800px) {
+    .container .box {
+        width: 100%;
+    }
+    .container .box span {
+        font-size: 1.2rem;
+    }
+    .container .box h1 {
+        font-size: 2.7rem;
+    }
+}
+@media (max-width: 460px) {
+    .container .box {
+        width: 100%;
+    }
+    .container .box span {
+        font-size: 1rem;
+    }
+    .container .box h1 {
+        font-size: 1.5rem;
+    }
+    .container .box a {
+        font-size: 0.8rem;
+    }
+}
