@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Header } from "../../../../components/header/Index";
 import { Member } from "../member/Index";
 import { MakeSavingModal } from "../saving_modal/Index";
 import style from "./styles.module.css";
 
 export function Main() {
+    const navigate = useNavigate();
     const [savingModalVisible, setSavingModalVisible] = useState(false);
 
     return (
@@ -21,7 +23,19 @@ export function Main() {
                             Poupar
                         </button>
 
-                        <button>Historico</button>
+                        <button
+                            onClick={() => navigate("/saving_group_historic")}
+                        >
+                            Historico
+                        </button>
+
+                        <button
+                            onClick={() =>
+                                navigate("/saving_group_participate_requests")
+                            }
+                        >
+                            Pedidos de accesso ao grupo
+                        </button>
                     </div>
                 </div>
                 <br />

@@ -8,6 +8,8 @@ import { MySavingGroupsPage } from "../pages/MySavingGroups";
 // import { PrivateRoute } from "./privateRoute";
 import { PageNotFound } from "../pages/PageNotFound";
 import { SavingGroupPage } from "../pages/SavingGroup";
+import { SavingGroupHistoricPage } from "../pages/SavingGroupHistoric";
+import { SavingGroupParticipateRequests } from "../pages/SavingGroupParticipateRequests";
 import { SavingGroupsPage } from "../pages/SavingGroups";
 
 export function Router() {
@@ -33,6 +35,14 @@ export function Router() {
                     <Route
                         path="/give_saving_group_member_a_rule"
                         element={<GiveSavingGroupMemberARulePage />}
+                    />
+                    <Route
+                        path="/saving_group_participate_requests"
+                        element={<SavingGroupParticipateRequests />}
+                    />
+                    <Route
+                        path="/saving_group_historic"
+                        element={<SavingGroupHistoricPage />}
                     />
                     <Route path="*" element={<PageNotFound />} />
                 </Routes>
