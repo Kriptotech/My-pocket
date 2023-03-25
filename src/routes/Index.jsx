@@ -3,8 +3,11 @@ import { CreateSavingGroupPage } from "../pages/CreateSavingGroup";
 import { Dashboardpage } from "../pages/Dashboard";
 
 import { Homepage } from "../pages/Homepage";
+import { MySavingGroupsPage } from "../pages/MySavingGroups";
 // import { PrivateRoute } from "./privateRoute";
 import { PageNotFound } from "../pages/PageNotFound";
+import { SavingGroupPage } from "../pages/SavingGroup";
+import { SavingGroupsPage } from "../pages/SavingGroups";
 
 export function Router() {
     return (
@@ -17,6 +20,15 @@ export function Router() {
                         path="/create_saving_group"
                         element={<CreateSavingGroupPage />}
                     />
+                    <Route
+                        path="/saving_groups"
+                        element={<SavingGroupsPage />}
+                    />
+                    <Route
+                        path="/my_saving_groups"
+                        element={<MySavingGroupsPage />}
+                    />
+                    <Route path="/saving_group" element={<SavingGroupPage />} />
                     <Route path="*" element={<PageNotFound />} />
                 </Routes>
             </BrowserRouter>

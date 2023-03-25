@@ -1,0 +1,55 @@
+.container {
+    min-height: 100vh;
+    flex: 1;
+    padding-bottom: 50px;
+}
+
+.container h2 {
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+.container .groups_box {
+    width: 100%;
+    padding: 0 35px;
+    margin-top: 25px;
+}
+.groups_box .groups_container {
+    min-height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px #00000027;
+    background-color: var(--box-background);
+    padding: 15px;
+}
+
+.groups_box .groups_container .item {
+    margin-bottom: 35px;
+    width: 100%;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(127, 127, 255, 0.514);
+    border-radius: 5px;
+    padding: 0 15px;
+    color: #666;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.groups_box .groups_container .item button {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .groups_box .groups_container .item {
+        width: 100%;
+    }
+    .container h2 {
+        margin-left: 15px;
+    }
+
+    .container .groups_box {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

@@ -3,8 +3,8 @@ import React, { createContext, useState } from "react";
 export const appContext = createContext(null);
 
 export function MainContext({ children }) {
-    const [isSideBarVisible, setIsSideBarVisible] = useState(false);
-    // values to be shared across the context
+    const [isSideBarVisible, setIsSideBarVisible] = useState(true);
+
     var contextValues = {
         isSideBarVisible,
         setIsSideBarVisible,

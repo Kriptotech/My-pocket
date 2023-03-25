@@ -44,7 +44,8 @@
     font-size: 0.9rem;
     font-weight: 500;
 }
-.form_box form .input_box input {
+.form_box form .input_box input,
+.form_box form .input_box select {
     font-size: 0.9rem;
     width: 100%;
     height: 50px;

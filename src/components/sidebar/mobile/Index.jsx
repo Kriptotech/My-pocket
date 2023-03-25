@@ -10,7 +10,7 @@ export function MobileSidebar() {
         <aside className={isSideBarVisible ? style.aside : style.not_visible}>
             <div className={style.box}>
                 <div className={style.logo_box}>
-                    <div className={style.logo}>
+                    <a href="/" className={style.logo}>
                         <BookBookmark
                             size={40}
                             color="rgb(184, 199, 206)"
@@ -20,7 +20,7 @@ export function MobileSidebar() {
                             <span>Sistema</span>
                             <span>My Pocket</span>
                         </div>
-                    </div>
+                    </a>
                     <button onClick={() => setIsSideBarVisible(false)}>
                         <XCircle
                             size={40}
@@ -35,13 +35,21 @@ export function MobileSidebar() {
                 </div>
 
                 <div className={style.links}>
-                    <a href="#">
+                    <a href="/saving_groups">
                         <UsersThree
                             size={20}
                             color="rgb(184, 199, 206)"
                             weight="fill"
                         />{" "}
-                        Grupos
+                        Grupos de popança
+                    </a>
+                    <a href="/my_saving_groups">
+                        <UsersThree
+                            size={20}
+                            color="rgb(184, 199, 206)"
+                            weight="fill"
+                        />{" "}
+                        Meus grupos de popança
                     </a>
                     <a href="/create_saving_group">
                         <UsersThree
@@ -50,14 +58,6 @@ export function MobileSidebar() {
                             weight="fill"
                         />{" "}
                         Criar grupo de popança
-                    </a>
-                    <a href="#">
-                        <UsersThree
-                            size={20}
-                            color="rgb(184, 199, 206)"
-                            weight="fill"
-                        />{" "}
-                        Cadastros
                     </a>
                 </div>
             </div>
