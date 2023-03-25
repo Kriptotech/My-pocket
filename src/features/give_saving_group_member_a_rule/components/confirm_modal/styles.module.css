@@ -1,4 +1,4 @@
-.profile {
+.main {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -9,7 +9,7 @@
     overflow: hidden;
     overflow-y: scroll;
 }
-.profile .box {
+.main .box {
     margin: auto;
     margin-top: 5%;
     width: min(800px, 100%);
@@ -18,7 +18,7 @@
     /* padding: 10px; */
     border-radius: 5px;
 }
-.profile .box h2 {
+.main .box h2 {
     border-bottom: 1px solid #0000001e;
     display: flex;
     align-items: center;
@@ -26,29 +26,34 @@
     margin: 0;
     padding: 15px;
 }
-.profile .box h2 button {
+.main .box h2 button {
     cursor: pointer;
     background: none;
     border: none;
 }
 
-.profile .inputs_container {
+.main .inputs_container {
     padding: 0 15px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 25px;
 }
-.profile .inputs_container .input_box {
-    width: 48%;
-    margin-bottom: 15px;
+.main .inputs_container .input_box,
+.main .inputs_container .input_box_radio {
+    width: 100%;
+    margin-bottom: 25px;
 }
-.profile .inputs_container .input_box label {
+.main .inputs_container .input_box label,
+.main .inputs_container .input_box_radio label:first-child {
     display: block;
     font-size: 0.8rem;
     font-weight: 500;
 }
-.profile .inputs_container .input_box input {
+.main .inputs_container .input_box_radio label:first-child {
+    margin-bottom: 10px;
+}
+.main .inputs_container .input_box input {
     width: 100%;
     height: 40px;
     color: #555;
@@ -56,16 +61,26 @@
     border: 1px solid #77777760;
     padding: 0 10px;
 }
-.profile .inputs_container .input_box input:hover {
+.main .inputs_container .input_box_radio input {
+    margin-right: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.main .inputs_container .input_box_radio label:nth-child(3),
+.main .inputs_container .input_box_radio label:nth-child(2) {
+    margin-top: 10px;
+    cursor: pointer;
+}
+.main .inputs_container .input_box input:hover {
     outline: 1px solid var(--primary-1);
 }
 
-.profile .box .button {
+.main .box .button {
     width: 100%;
     height: 100px;
     padding: 0 15px;
 }
-.profile .box .button button {
+.main .box .button button {
     float: right;
     margin-top: 30px;
     padding: 15px 20px;
@@ -75,18 +90,18 @@
     color: #fff;
     border-radius: 5px;
 }
-.profile .box .button button:hover {
+.main .box .button button:hover {
     opacity: 0.8;
 }
-.profile .box .button button:active {
+.main .box .button button:active {
     opacity: 0.4;
 }
 
 @media (max-width: 500px) {
-    .profile {
+    .main {
         padding: 0 15px;
     }
-    .profile .inputs_container .input_box {
+    .main .inputs_container .input_box {
         width: 100%;
     }
 }

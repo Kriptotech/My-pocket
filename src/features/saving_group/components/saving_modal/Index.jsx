@@ -1,8 +1,15 @@
 import { XCircle } from "phosphor-react";
+import { useState } from "react";
 
 import style from "./styles.module.css";
 
 export function MakeSavingModal({ clsoe }) {
+    const [debting, setDebting] = useState("no");
+
+    const handleChange = (event) => {
+        setDebting(event.target.value);
+    };
+
     return (
         <div className={style.profile}>
             <div className={style.box}>
@@ -18,8 +25,40 @@ export function MakeSavingModal({ clsoe }) {
                         <label htmlFor="">Poupar</label>
                         <input type="text" />
                     </div>
+
+                    <div className={style.input_box_radio}>
+                        <label htmlFor="">Vai dever?</label>
+
+                        <label htmlFor="1">Sim</label>
+                        <input
+                            type="radio"
+                            id="1"
+                            name="radio"
+                            value="yes"
+                            checked={debting === "yes"}
+                            onChange={handleChange}
+                        />
+
+                        <label htmlFor="2">Não</label>
+                        <input
+                            type="radio"
+                            id="2"
+                            name="radio"
+                            value="no"
+                            checked={debting === "no"}
+                            onChange={handleChange}
+                        />
+                    </div>
+
+                    {debting === "yes" && (
+                        <div className={style.input_box}>
+                            <label htmlFor="">Valor a dever</label>
+                            <input type="text" />
+                        </div>
+                    )}
+
                     <div className={style.input_box}>
-                        <label htmlFor="">Fundo</label>
+                        <label htmlFor="">Numero Mpesa</label>
                         <input type="text" />
                     </div>
                 </div>

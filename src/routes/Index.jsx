@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CreateSavingGroupPage } from "../pages/CreateSavingGroup";
 import { Dashboardpage } from "../pages/Dashboard";
+import { GiveSavingGroupMemberARulePage } from "../pages/GiveSavingGroupMemberARule";
 
 import { Homepage } from "../pages/Homepage";
 import { MySavingGroupsPage } from "../pages/MySavingGroups";
@@ -29,6 +30,10 @@ export function Router() {
                         element={<MySavingGroupsPage />}
                     />
                     <Route path="/saving_group" element={<SavingGroupPage />} />
+                    <Route
+                        path="/give_saving_group_member_a_rule"
+                        element={<GiveSavingGroupMemberARulePage />}
+                    />
                     <Route path="*" element={<PageNotFound />} />
                 </Routes>
             </BrowserRouter>

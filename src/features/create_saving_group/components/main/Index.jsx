@@ -44,6 +44,10 @@ export function Main() {
                                 <option value="">Mensal</option>
                             </select>
                         </div>
+                        <div className={style.input_box}>
+                            <label htmlFor="">Senha de acesso do grupo</label>
+                            <input type="text" />
+                        </div>
                     </div>
 
                     <div className={style.button}>

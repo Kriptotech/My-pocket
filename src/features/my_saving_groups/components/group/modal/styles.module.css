@@ -1,0 +1,72 @@
+.profile {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000042;
+    padding: 0 35px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.profile .box {
+    margin: auto;
+    margin-top: 5%;
+    width: min(800px, 100%);
+    background-color: var(--box-background);
+    box-shadow: 4px 4px 5px #0000001e;
+    /* padding: 10px; */
+    border-radius: 5px;
+}
+.profile .box h2 {
+    border-bottom: 1px solid #0000001e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 15px;
+}
+.profile .box h2 button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.profile .box .button {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.profile .box .button input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 0px 10px;
+    border: 1px solid #0000001e;
+    color: #555;
+    outline: 1px solid #6827ff56;
+}
+.profile .box .button button {
+    width: 100px;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border: none;
+    background-color: var(--primary-1);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+}
+.profile .box .button button:hover {
+    opacity: 0.8;
+}
+.profile .box .button button:active {
+    opacity: 0.4;
+}
+
+@media (max-width: 500px) {
+    .profile {
+        padding: 0 15px;
+    }
+}
